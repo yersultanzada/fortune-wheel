@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Квиз-лендинг</title>
+	<meta name="description" content="">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="libs/blueimp-gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" type="text/css" href="css/project.min.css">
+	<link rel="stylesheet" type="text/css" href="css/video.min.css">
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();
+			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(95767749, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/95767749" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+	<div class="main">
+		<div class="row mx-0">
+			<div class="col-xl-12 col-lg-12 px-0">
+				<div class="_bg"></div>
+				<div class="_header">
+					<div class="_logo">
+						<span>marga</span>
+					</div>
+					<div class="_text">
+						ӨНДІРУШІДЕН СЕНІМДІ ГАРНИТУРА
+					</div>
+				</div>
+				<div class="_blur-block row mx-0">
+					<div class="col-lg-9 offset-lg-1 px-0">
+						<div class="_center">
+							<div class="_title">
+								1 минут ішінде тест өтіп, <span>болашақ ас үйіңіздің құнын</span> дәл қазір біліңіз
+							</div>
+							<div class="_adv">
+								<div class="_item" style="margin-right: 30px">
+									<div class="_item-icon">
+										<img src="img/svg/1.svg" alt="">
+									</div>
+									<div class="_item-title">3 жыл кепілдік</div>
+									<div class="_item-text">Біз немістің дәлелденген материалдары мен фурнитурасын қолданамыз</div>
+								</div>
+								<div class="_item">
+									<div class="_item-icon">
+										<img src="img/svg/2.svg" alt="">
+									</div>
+									<div class="_item-title">Тегін 3D жоба</div>
+									<div class="_item-text">Дизайнер болашақ ас үйдің макетін барлық жағынан әзірлейді</div>
+								</div>
+							</div>
+							<div class="d-block d-sm-flex align-items-center">
+								<div>
+									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testModal">
+										Бағасын білу
+									</button>
+								</div>
+								<div class="_btn-text">+ тест өткені үшін кепілдендірілген сыйлық алыңыз</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Swiper -->
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper" id="links">
+			<div class="swiper-slide">
+				<a href="img/gallery/1.jpg" title="">
+					<img src="img/gallery/1.jpg" alt="">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="img/gallery/2.jpg">
+					<img src="img/gallery/2.jpg" alt="">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="img/gallery/3.jpg">
+					<img src="img/gallery/3.jpg" alt="">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="img/gallery/4.jpg">
+					<img src="img/gallery/4.jpg" alt="">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="img/gallery/5.jpg">
+					<img src="img/gallery/5.jpg" alt="">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="img/gallery/6.jpg">
+					<img src="img/gallery/6.jpg" alt="">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="img/gallery/7.jpg">
+					<img src="img/gallery/7.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between">
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="col-xl-8 offset-xl-2">
+					<div class="modal-body">
+						<form class="portable-test-wrapper contact-form" id="contactForm" method="POST">
+							<!-- LOGO + TITLE START -->
+							<div class="header-line">
+								<div class="container">
+									<h2 class="header-line__title">
+										Болашақ ас үйіңіздің құнын біліңіз<br>
+										<span>+ кепілдендірілген сыйлыққа ие болыңыз</span>
+									</h2>
+								</div>
+							</div>
+							<!-- LOGO + TITLE END -->
+
+							<!-- PROGRESS LINE START -->
+							<div class="progress-line">
+								<div class="main-progress">
+									<div class="main-progress__extender" style="width: 14.2857%;"></div>
+								</div>
+								<!-- STEPS TEXT START -->
+								<div class="main-progress__text main-progress__text_active">
+									<b>Жауап беруге 3 сұрақ қалды,</b> кепілдендірілген бонус алу үшін
+								</div>
+								<!-- STEPS TEXT END -->
+								<!-- STEPS TEXT START -->
+								<div class="main-progress__text">
+									<b>Жауап беруге 2 сұрақ қалды,</b> кепілдендірілген бонус алу үшін
+								</div>
+								<!-- STEPS TEXT END -->
+								<!-- STEPS TEXT START -->
+								<div class="main-progress__text">
+									<b>Жауап беруге 1 сұрақ қалды,</b> кепілдендірілген бонус алу үшін
+								</div>
+								<!-- STEPS TEXT END -->
+								<!-- STEPS TEXT START -->
+								<div class="main-progress__text">
+									<b>Тесттен өттіңіз.</b> Бонусыңызды қамтамасыз ету үшін төмендегі форманы толтырыңыз
+								</div>
+								<!-- STEPS TEXT END -->
+							</div>
+							<!-- PROGRESS LINE END -->
+
+							<!-- STEPS START -->
+							<div class="container">
+								<div class="test-slider">
+									<!-- ONE-STEP START -->
+									<div class="step-slide">
+										<h3 class="step-slide__title">
+											Ас үйіңіздің қандай стильде болғанын қалайсыз?
+										</h3>
+										<div class="step-slide__grid">
+											<!-- ONE-ITEM START -->
+											<label for="step1-1" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s1-1.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Стиль" id="step1-1" value="Классика">
+												<div class="pick-item__label">Классика</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<!-- ONE-ITEM START -->
+											<label for="step1-2" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s1-2.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Стиль" id="step1-2" value="Хай тек">
+												<div class="pick-item__label">Хай тек</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<!-- ONE-ITEM START -->
+											<label for="step1-3" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s1-3.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Стиль" id="step1-3" value="Минимализм">
+												<div class="pick-item__label">Минимализм</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<div id="next1" class="btn-next-container"></div>
+										</div>
+									</div>
+									<!-- ONE-STEP END -->
+
+									<!-- ONE-STEP START -->
+									<div class="step-slide">
+										<h3 class="step-slide__title">
+											Ас үйіңіздің қандай түсті болғанын қалайсыз?
+										</h3>
+										<div class="step-slide__grid">
+											<!-- ONE-ITEM START -->
+											<label for="step2-1" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s2-1.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Цвет" id="step2-1" value="Светлый">
+												<div class="pick-item__label">Ашық түсті</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<!-- ONE-ITEM START -->
+											<label for="step2-2" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s2-2.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Цвет" id="step2-2" value="Темный">
+												<div class="pick-item__label">Қою түсті</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<!-- ONE-ITEM START -->
+											<label for="step2-3" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s2-3.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Цвет" id="step2-3" value="Цветной">
+												<div class="pick-item__label">Түрлі түсті</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<div id="next3" class="btn-next-container"></div>
+										</div>
+									</div>
+									<!-- ONE-STEP END -->
+
+
+									<!-- ONE-STEP START -->
+									<div class="step-slide">
+										<h3 class="step-slide__title">
+											Бонусыңызды таңдаңыз:
+										</h3>
+										<div class="step-slide__grid">
+											<!-- ONE-ITEM START -->
+											<label for="step3-1" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s3-1.png" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Бонус" id="step3-1" value="Скидка">
+												<div class="pick-item__label">Скидка 10%</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<!-- ONE-ITEM START -->
+											<label for="step3-2" class="pick-item">
+												<div class="pick-item__img">
+													<img src="img/test/questions/s3-2.jpg" alt="item">
+												</div>
+												<input class="pick-item__input" type="radio" name="Бонус" id="step3-2" value="Мойка">
+												<div class="pick-item__label">Мойка</div>
+											</label>
+											<!-- ONE-ITEM END -->
+
+											<div id="next4" class="btn-next-container"></div>
+										</div>
+									</div>
+									<!-- ONE-STEP END -->
+
+									<!-- ONE-STEP START -->
+									<div class="step-slide prev_slide">
+										<h3 class="step-slide__title">
+											Жауаптарыңызға рахмет! Контактілеріңізді қалдыру арқылы ас үйіңіздің құнын ала аласыз.
+										</h3>
+										<div class="step-slide__grid">
+											<h4 class="step-slide__discount">+ кепілдендірілген сыйлық немесе жеңілдік</h4>
+											<div class="last-step-form">
+												<label class="last-step-form__label">Аты-жөніңізді және нөміріңізді енгізіңіз, менеджеріміз сізге қайта қоңырау шалып, WhatsApp-қа опцияларды жібереді.</label>
+												<input class="last-step-form__input contact-form__input_name" type="text" name="Имя" placeholder="Атыңызды енгізіңіз *" required="required">
+												<input class="last-step-form__input contact-form__input_tel" type="tel" name="Телефон" placeholder="Нөміріңізді енгізіңіз *" required="required">
+												<div class="contact-form__preloader"></div>
+												<fieldset class="contact-form__input-wrapper contact-form__input-wrapper_hidden">
+													<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+													<input id="honeypot" type="text" name="honeypot" value="">
+												</fieldset>
+												<button class="last-step-form__button btn-shine contact-form__button" type="submit">
+													<span>Бағасын білу</span>
+												</button>
+												<div class="contact-form__description"></div>
+												<div class="last-step-form__accept">Түймені басу арқылы сіз жеке деректерді өңдеуге <a href="privacy.html" target="_blank">Өтініш пен келісімді</a> қабылдайсыз.</div>
+											</div>
+										</div>
+
+									</div>
+									<!-- ONE-STEP END -->
+								</div>
+							</div>
+							<!-- STEPS END -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Blueimp gallery -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls text-white">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/video.min.js"></script>
+	<script src="libs/test/jquery.bxslider.min.js"></script>
+	<script src="libs/test/jquery.maskedinput.min.js"></script>
+	<script src="libs/test/is.mobile.js" async></script>
+	<script src="libs/test/jquery.form.js" async></script>
+	<script src="js/test.js"></script>
+	<script src="mail/mail.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 2,
+			centeredSlides: true,
+			spaceBetween: 30,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "fraction",
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
+	<script>
+		document.getElementById('links').onclick = function (event) {
+			event = event || window.event;
+			var target = event.target || event.srcElement,
+					link = target.src ? target.parentNode : target,
+					options = {index: link, event: event},
+					links = this.getElementsByTagName('a');
+			blueimp.Gallery(links, options);
+		};
+	</script>
+</body>
+</html>
+<div class="video-widget" data-state="default">
+	<div class="video-widget__container">
+		<video id="video-widget__video" loop="" autoplay="" playsinline="" preload="auto" muted="muted" controlslist="nodownload" disablepictureinpicture="" class="video-widget__video" src="img/video.mp4">
+			<source src="img/video.mp4" type="video/mp4">
+		</video>
+		<div class="video-widget__close"></div>
+		<div class="video-widget__hand">
+			<img src="img/video-hand.png" alt="">
+			<span></span>
+		</div>
+	</div>
+</div>
