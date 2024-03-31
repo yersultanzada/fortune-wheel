@@ -4,41 +4,49 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+/*$first: #4705FB !default;
+$second: #4000ee !default;*/
+/*$first: #ba5536 !default;
+$second: #a43820 !default;*/
+/*$first: #004445 !default;
+$second: #2c7873 !default;*/
+/*$first: #ee693f !default;
+$second: #f69454 !default;*/
 .widget-wheel-inner .widget-wheel-slice-1 {
-  background-image: linear-gradient(-45deg, transparent 50%, transparent 50%), linear-gradient(-90deg, transparent 50%, #4000ee 50%);
+  background-image: linear-gradient(-45deg, transparent 50%, transparent 50%), linear-gradient(-90deg, transparent 50%, #006c84 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-2 {
-  background-image: linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(-45deg, transparent 50%, #4705FB 50%);
+  background-image: linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(-45deg, transparent 50%, #6eb5c0 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-3 {
-  background-image: linear-gradient(45deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, #4000ee 50%);
+  background-image: linear-gradient(45deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, #006c84 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-4 {
-  background-image: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #4705FB 50%);
+  background-image: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #6eb5c0 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-5 {
-  background-image: linear-gradient(135deg, transparent 50%, transparent 50%), linear-gradient(90deg, transparent 50%, #4000ee 50%);
+  background-image: linear-gradient(135deg, transparent 50%, transparent 50%), linear-gradient(90deg, transparent 50%, #006c84 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-6 {
-  background-image: linear-gradient(180deg, transparent 50%, transparent 50%), linear-gradient(135deg, transparent 50%, #4705FB 50%);
+  background-image: linear-gradient(180deg, transparent 50%, transparent 50%), linear-gradient(135deg, transparent 50%, #6eb5c0 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-7 {
-  background-image: linear-gradient(225deg, transparent 50%, transparent 50%), linear-gradient(180deg, transparent 50%, #4000ee 50%);
+  background-image: linear-gradient(225deg, transparent 50%, transparent 50%), linear-gradient(180deg, transparent 50%, #006c84 50%);
 }
 
 .widget-wheel-inner .widget-wheel-slice-8 {
-  background-image: linear-gradient(270deg, transparent 50%, transparent 50%), linear-gradient(225deg, transparent 50%, #4705FB 50%);
+  background-image: linear-gradient(270deg, transparent 50%, transparent 50%), linear-gradient(225deg, transparent 50%, #6eb5c0 50%);
 }
 
 .widget-btn-1, .widget-btn-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4705FB), to(#4000ee));
-  background: linear-gradient(to bottom, #4705FB, #4000ee);
+  background: -webkit-gradient(linear, left top, left bottom, from(#006c84));
+  background: linear-gradient(to bottom, #006c84);
 }
 
 .widget-wheel-text span {
