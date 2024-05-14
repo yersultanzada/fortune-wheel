@@ -58,11 +58,3 @@ $second: #f69454 !default;*/
   border: none;
   color: #FFFFFF;
 }
-
-.iti--allow-dropdown input {
-  padding-left: 25px !important;
-}
-
-.iti__flag-container {
-  display: none !important;
-}

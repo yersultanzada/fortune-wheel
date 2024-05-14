@@ -16,7 +16,7 @@ $(function() {
 				event.preventDefault();
 		}
 	})
-	$(".contact-form").submit(function (event) {
+	$(".contactFormWheel").submit(function (event) {
 		event.preventDefault();
 		var bonus = [1,2,8]
 		var t = bonus[Math.floor(Math.random() * bonus.length)];
@@ -32,6 +32,14 @@ $(function() {
 			value: updatedWidgetHeadValue
 		});
 		$(this).append(hiddenInput); // Добавляем скрытое поле к форме перед отправкой
+
+		// Создаем или обновляем скрытое поле для имени заявки
+		var hiddenInputName = $('<input>').attr({
+			type: 'hidden',
+			name: 'Имя', // Установите имя поля, которое будет читаться на сервере
+			value: 'Виджет-колесо'
+		});
+		$(this).append(hiddenInputName); // Добавляем скрытое поле к форме перед отправкой
 
 		// Сообщение при успешной отправке данных
 		let successRespond = 'Сообщение успешно отправлено.';
@@ -76,6 +84,10 @@ $(function() {
 					$(".widget-page").hide();
 					$(".widget-page-3").show();
 				}, 3200);
+
+				$('.widget-activator').css({
+					'display': 'none'
+				})
 
 			} else {
 				formRespond.html(errorRespond).css('color', '#c64b4b');
